@@ -10,7 +10,6 @@ const HeroSection = () => {
           <div className={styles.headingContainer}>
             <h1 className={styles.heading + " " + styles.roleContainer}>
               Hi <span className={styles.colorTeritiary}>!</span> I Am{" "}
-              <span className={styles.role}>Full Stack</span>
             </h1>
             <h1 className={styles.heading + " " + styles.name}>
               Gokul Mylsami
@@ -18,7 +17,8 @@ const HeroSection = () => {
           </div>
           <div className={styles.infoWrapper}>
             <p className={styles.info}>
-              I'm a full-stack developer specialised in frontend
+              I'm a <span className={styles.role}>Full Stack</span> developer
+              specialised in frontend
             </p>
             <p className={styles.info}>and backend development for complex </p>
             <p className={styles.info}>scalable web apps.</p>

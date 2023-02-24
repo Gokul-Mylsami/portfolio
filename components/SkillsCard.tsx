@@ -7,9 +7,11 @@ interface SkillsCardInterface {
 
 const SkillsCard: React.FC<SkillsCardInterface> = ({ name, imageURL }) => {
   return (
-    <div className={styles.cardWrapper} key={name} title={name}>
-      <img src={imageURL} width={50} height={50} />
-    </div>
+    <>
+      <div className={styles.cardWrapper} key={name} title={name}>
+        <img src={imageURL} width={50} height={50} />
+      </div>
+    </>
   );
 };
 

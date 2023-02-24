@@ -47,12 +47,10 @@
 }
 
 .role {
-  margin-left: 3rem;
-  padding: 1.2rem 3rem;
-  background-color: var(--secondary);
-  color: var(--white);
-  font-size: 2.4rem;
-  font-weight: 500;
+  padding: 1rem;
+  color: var(--secondary);
+  font-size: 2.2rem;
+  font-weight: 600;
   border-radius: 10rem;
 }
 

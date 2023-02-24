@@ -140,7 +140,11 @@ const SkillsSection = () => {
                 {skills[role].map(
                   (skill: { name: string; imageURL: string }) => {
                     return (
-                      <SkillsCard name={skill.name} imageURL={skill.imageURL} />
+                      <SkillsCard
+                        name={skill.name}
+                        imageURL={skill.imageURL}
+                        key={skill.name}
+                      />
                     );
                   }
                 )}
