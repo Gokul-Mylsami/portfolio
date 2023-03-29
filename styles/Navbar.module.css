@@ -29,7 +29,8 @@
 .navbarLinksContainer li {
   padding: 1.6rem 3rem;
   border-radius: 5rem;
-
+  border: 3px solid var(--tertiary);
+  color: var(--tertiary);
   transition: all 0.5s;
 }
 

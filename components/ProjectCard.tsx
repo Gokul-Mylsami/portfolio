@@ -17,12 +17,6 @@ const ProjectCard: React.FC<ProjectCard> = ({
   techStackUsed,
   imageUrl,
 }) => {
-  let skills = data[0];
-  const [techStack, setTechStack] = useState([]);
-
-  const keys = Object.keys(data[0]);
-  console.log(keys);
-
   return (
     <div className={styles.flip}>
       <div
@@ -49,14 +43,13 @@ const ProjectCard: React.FC<ProjectCard> = ({
           </svg>
         </a>
         <div className={styles.cardBottom}>
-          <img
-            className={styles.cardBottomImage}
-            src="data:image/png;base64,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"
-          />
-          <img
-            className={styles.cardBottomImage}
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAGQElEQVR4nM1XaWxUVRSu6x81Ln+Ma+L+1yUu/0w0Jiqdefc9rKwTJRrW1kQRO33v3jelDLTTWktAoCURQlhbFwqd9+59JVhoC4pCp7QkogkoBSktwlRm60yh13yvTmVQceoP40tu5uTcc85379numYKC/9tXVNR0HTFsU2N8wKtboyoV/YQ6NeoH9r1XyoLn7lHR79XDo4TyAdWwymfPPnjDhEADgcC1hPHdvurOxOLP+2XIOi/xO3/14RFCeVKl9hIcDEtlPEgMPjz3464Rs+mUrGo5J8s/Oy19oY6Eyvi+CYEX+sO+1yt2J5buGJQzKtvjimFnpgb3RBdt+GF0afOgfKNmX0KlPILlC3UkIYe9acG2IcWw076qjguQm1nVnvBS+928gVVT7Hlv3VE5f1V3RmX8k6JA282FZfaLKhNHpi/bGwvuGJTFDb2Z4jU9GQBMX7onRkzRBRnvouZbFMNe+WbNvgRtPCk10zmaNzChYjDQdFJOXfLlUKHffjrLfz7Qdj0xeJ1minTlzrNyWctZqTInrRh2dUGBvCYr5ynbcSehYrjaPi81Js7nD2zYscWfn5aTTSdWWLrz/iwf8SKMH5y3uns48OkpiZiCBu/yWLq31u10DY9KxbBSeQOrTAxWfNEvX6/YPVSo73xy/EBM1PtCnfGK7WekaookFmhfqCOOvfEb+8XDminilS2/SJXycxMBjuhbfpS+6s4hb1m4TtHtWi3g7H+tvDWBmE4Ntl3y6pbEAg3ea+W74pCBrKcsXDujsj2KcGlma3d+oDq/y0t55N1138mSht6RNz7cf6G4vueSf9MxieyttqOyhg/lLPCwV7rxmCxu6LkEnXfWHsksXHdUKgbv9i5qvvtvAYsC4g6NORtQp3NWHEzBhahf/6bjcsGablm2+bjUt/wkVSZSisHT2RuDBg97kFmw5rCrA13YgC2F8iRhfAMwckCJP/wUus2cFYdSyFacfFbt1xlkrVe3LmmmkwAf7vToYeWlhc5NWV3Q4GEPMprpJKEDelbtVxnYAj1n5aGUysSZ8ZxBIhDK4zgl29bnGleZ6CKMn6Hb+uTMqs7U++uPjhbX945ojPOiQNONKhPLFWoPqVRENerUuTxTCIQGstChjX0SNmALNlHTwCCGHSeG/VCBSoVd0tB70b/xGPpx1OMPv4wDKYalv738myTddsI9scp40s1W6tShlSKhsEATJj6aRFseQZiQydCBLmyMXS78sspE1L/p+GhJQ89FQkW4QNHtFIQnlzsxorc8k9v4eQqxQocijG8eKyk+BMBsYgWbByUO/Hs1bIEsdKB7+YPi0e3nJpe3xhA+xeBJ3MyNK5hef/jZfwIGyJ+B+cSBNdMJl9QfuQg34DaFuvXK1VxNKHddDUAsX3VHQqWiNsfVjX05rlb89quE8iHX1fU9F1WzdSfa40MI+BXJFblaciGmuDluCtC/TK5tJ7LJFYFN1tgnS5FclMc8xo4HXDd4S+0nCBX9/7acCssscmU5QRc2YAv07BUHU8BQ9PDjObU8yR++XTXFehT77D81kMNS3/xjtoEMew17vIGABs/Y+tcNBLZgU2ViPTCu2jIJ5RG0u5K1RzITaZmQgSx04HbYgC3YLMjn08zWiNl0Us6oao+i4ef3SLQmLn8kZla1RxFXzXS68gIdKwvnLOKimU6M+K1Hs3zCeEPOs8ic35/Fzpxn0Uv5Y9CFF/DE5g3s1e00YqQYdkoJbL8tdxAQ385bFRkfBOaviqQJc3IGAcSSGDxVFYYNazhvYMWw41DSmJNQDHFflo+pUqF2rUpFGh4Zq28n7aW8BpPpH/riPuhWhs+hWcTyBtZM0atvPSHfWn4grlD7Ywx7HsN6gTDRO23pnviS5gG3m2EFtw9IDICE8W5PmfVSUemuW1Uq1rxVdyCBKoCtvIE9ulU8o3Jv3B1RqzsuKIaVmRJs+3Xh+u9HETdfqB3lcZgw0ZUdb7E3Jfjlr5D1hTrd+E5ftjcBW3kDY5pUTd6JoRzDOdogxpi5Kw9hoE8RatUgpnD9ZJMvdgf6lYdGIAP3Q2dmqCOhMdEBW3kD43MTybBNlaHbWCNjf2H4qkn+8INXyk7SW+5RqQipVPysUDvpyup2YMJ/Yf6L7zeaWdTq8yE2QgAAAABJRU5ErkJggg=="
-          />
+          {techStackUsed.map((singleTechStack: string) => {
+            return (
+              <>
+                <p className={styles.backTechStack}>{singleTechStack}</p>
+              </>
+            );
+          })}
         </div>
       </div>
     </div>

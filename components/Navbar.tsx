@@ -8,10 +8,11 @@ const Navbar = () => {
           Gokul <span className={styles.dot}>.</span>
         </h1>
         <ul className={styles.navbarLinksContainer}>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <a href={"/Resume.pdf"} target="_blank" download>
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
