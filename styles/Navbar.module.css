@@ -24,17 +24,18 @@
   display: flex;
   gap: 3rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.navbarLinksContainer li {
+.navbarLinksContainer {
   padding: 1.6rem 3rem;
-  border-radius: 5rem;
+  border-radius: 5px;
   border: 3px solid var(--tertiary);
   color: var(--tertiary);
   transition: all 0.5s;
 }
 
-.navbarLinksContainer li:hover {
+.navbarLinksContainer:hover {
   color: var(--white);
   background-color: var(--tertiary);
 }

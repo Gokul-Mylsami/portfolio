@@ -1,5 +1,6 @@
+import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
-
+import { saveAs } from "file-saver";
 const Navbar = () => {
   return (
     <nav className={styles.navbarContainer}>
@@ -7,13 +8,13 @@ const Navbar = () => {
         <h1 className={styles.heading}>
           Gokul <span className={styles.dot}>.</span>
         </h1>
-        <ul className={styles.navbarLinksContainer}>
-          <li>
-            <a href={"/Resume.pdf"} target="_blank" download>
-              Resume
-            </a>
-          </li>
-        </ul>
+        <a
+          className={styles.navbarLinksContainer}
+          href="https://drive.google.com/file/d/1SCiFCnDmX24MPAah5BsUClSc9lSvYZUa/view?usp=sharing"
+          download="Resume.pdf"
+        >
+          Resume
+        </a>
       </div>
     </nav>
   );

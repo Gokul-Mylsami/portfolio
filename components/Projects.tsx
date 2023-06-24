@@ -54,7 +54,7 @@ const Projects = () => {
   return (
     <>
       <div className={"container " + styles.projectContainer}>
-        <h1>Projects</h1>
+        <h1 style={{ textAlign: "center", marginTop: 64 }}>Projects</h1>
         <div className={styles.projects}>
           {projects.map((singleProject) => {
             return (

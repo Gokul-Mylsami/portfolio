@@ -130,7 +130,9 @@ const SkillsSection = () => {
 
   return (
     <div className={"container " + styles.sectionContainer}>
-      <h1>I have my Best skills </h1>
+      <h1 style={{ textAlign: "center", marginTop: 64 }}>
+        I have my Best skills{" "}
+      </h1>
       <div>
         {roles.map((role: string) => {
           return (

@@ -5,7 +5,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <div className={styles.heroContainer}>
-      <div className={styles.detailsWrapper}>
+      <div className={styles.detailsWrapper} id="fade-in-text">
         <div>
           <div className={styles.headingContainer}>
             <h1 className={styles.heading + " " + styles.roleContainer}>
@@ -25,7 +25,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className={styles.imgWrapper}>
+      <div className={styles.imgWrapper + " " + "photo"}>
         <Image src={photo} />
       </div>
     </div>
