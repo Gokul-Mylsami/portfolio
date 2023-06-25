@@ -17,8 +17,8 @@ const HeroSection = () => {
           </div>
           <div className={styles.infoWrapper}>
             <p className={styles.info}>
-              I'm a <span className={styles.role}>Full Stack</span> developer
-              specialised in frontend
+              I&apos;m a <span className={styles.role}>Full Stack</span>{" "}
+              developer specialised in frontend
             </p>
             <p className={styles.info}>and backend development for complex </p>
             <p className={styles.info}>scalable web apps.</p>

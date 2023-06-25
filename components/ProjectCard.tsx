@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/ProjectCard.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectCard {
   name: string;
@@ -46,13 +47,13 @@ const ProjectCard: React.FC<ProjectCard> = ({
             Done in : {getTechStack()}
           </p>
           <div className={styles.links}>
-            <a href={githubLink} target="_blank">
+            <Link href={githubLink} target="_blank">
               GitHub
-            </a>
+            </Link>
             {hostedLink && (
-              <a href={hostedLink} target="_blank">
+              <Link href={hostedLink} target="_blank">
                 Open Live
-              </a>
+              </Link>
             )}
           </div>
         </div>
