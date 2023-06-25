@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import styles from "../styles/ProjectCard.module.css";
-import data from "../skills.json";
-import Image from "next/image";
 
 interface ProjectCard {
   name: string;
@@ -9,6 +7,7 @@ interface ProjectCard {
   githubLink: string;
   techStackUsed: string[];
   imageUrl: string;
+  hostedLink?: string;
 }
 
 const ProjectCard: React.FC<ProjectCard> = ({
@@ -17,15 +16,17 @@ const ProjectCard: React.FC<ProjectCard> = ({
   githubLink,
   techStackUsed,
   imageUrl,
+  hostedLink,
 }) => {
   const getTechStack = () => {
+    console.log(techStackUsed, name);
     let str: string = "";
 
     techStackUsed.forEach((tech) => {
-      str += tech + " ";
+      str += tech + ", ";
     });
 
-    return str;
+    return str.slice(0, str.length - 1);
   };
   return (
     <div className={styles.card}>
@@ -40,12 +41,14 @@ const ProjectCard: React.FC<ProjectCard> = ({
             Done in : {getTechStack()}
           </p>
           <div className={styles.links}>
-            <a href="github-link" target="_blank">
+            <a href={githubLink} target="_blank">
               GitHub
             </a>
-            <a href="hosted-link" target="_blank">
-              Hosted
-            </a>
+            {hostedLink && (
+              <a href={hostedLink} target="_blank">
+                Open Live
+              </a>
+            )}
           </div>
         </div>
       </div>

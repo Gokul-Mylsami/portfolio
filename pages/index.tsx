@@ -9,6 +9,7 @@ import SkillsSection from "../components/SkillsSection";
 import Lines from "../components/Lines";
 import styles from "../styles/Home.module.css";
 import TimeLine from "../components/TimeLine";
+import GetInTouch from "../components/GetInTouch";
 
 const Home: NextPage = () => {
   return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <TimeLine />
       <SkillsSection />
       <Projects />
+      <GetInTouch />
       <Footer />
     </div>
   );

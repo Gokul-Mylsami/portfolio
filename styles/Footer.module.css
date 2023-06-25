@@ -1,27 +1,6 @@
 .footerSection {
-  margin-top: 2rem;
-  height: 10rem;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-}
-
-.logos {
-  height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3.2rem;
-}
-
-.logo {
-}
-
-.copyrightLogo {
-  font-size: 1.4rem;
-}
-
-.copyright {
-  background-color: #fff;
+  margin: 2rem 0;
+  height: 2rem;
   text-align: center;
   font-size: 1.4rem;
 }
