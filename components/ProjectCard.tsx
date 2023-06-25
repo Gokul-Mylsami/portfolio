@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/ProjectCard.module.css";
+import Image from "next/image";
 
 interface ProjectCard {
   name: string;
@@ -19,7 +20,6 @@ const ProjectCard: React.FC<ProjectCard> = ({
   hostedLink,
 }) => {
   const getTechStack = () => {
-    console.log(techStackUsed, name);
     let str: string = "";
 
     techStackUsed.forEach((tech) => {
@@ -31,7 +31,12 @@ const ProjectCard: React.FC<ProjectCard> = ({
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
-        <img src={imageUrl} alt="Project Image" />
+        <Image
+          src={imageUrl}
+          alt="Project Image"
+          layout="fill"
+          placeholder="empty"
+        />
       </div>
       <div className={styles.content}>
         <h2 className={styles.projectName}>{name}</h2>

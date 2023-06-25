@@ -3,7 +3,7 @@ import styles from "../styles/Navbar.module.css";
 import { saveAs } from "file-saver";
 const Navbar = () => {
   return (
-    <nav className={styles.navbarContainer}>
+    <nav className={styles.navbarContainer} id="fade-in-text">
       <div className={styles.navbarElements}>
         <h1 className={styles.heading}>
           Gokul <span className={styles.dot}>.</span>

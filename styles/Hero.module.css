@@ -58,3 +58,21 @@
   width: 50rem;
   margin-right: 10rem;
 }
+
+@media only screen and (max-width: 900px) {
+  .imgWrapper {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .headingContainer {
+    margin-left: 4%;
+    text-align: center;
+  }
+  .detailsWrapper {
+    height: 83vh;
+    margin: 0 3rem;
+    text-align: center;
+  }
+}

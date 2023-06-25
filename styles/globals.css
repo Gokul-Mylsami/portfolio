@@ -200,3 +200,12 @@ html {
     margin: 10px 0;
   }
 }
+
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
