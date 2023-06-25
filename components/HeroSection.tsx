@@ -26,7 +26,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className={styles.imgWrapper + " " + "photo"}>
-        <Image src={photo} />
+        <Image src={photo} alt="my-photo" />
       </div>
     </div>
   );
