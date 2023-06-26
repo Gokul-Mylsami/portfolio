@@ -8,6 +8,13 @@
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
+.navbarContainer {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .heading {
   font-size: 3.6rem;
   color: var(--black);

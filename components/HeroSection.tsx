@@ -9,10 +9,10 @@ const HeroSection = () => {
         <div>
           <div className={styles.headingContainer}>
             <h1 className={styles.heading + " " + styles.roleContainer}>
-              Hi <span className={styles.colorTeritiary}>!</span> I Am{" "}
+              GOKUL
             </h1>
-            <h1 className={styles.heading + " " + styles.name}>
-              Gokul Mylsami
+            <h1 className={styles.heading + " " + styles.roleContainer}>
+              MYLSAMI
             </h1>
           </div>
           <div className={styles.infoWrapper}>

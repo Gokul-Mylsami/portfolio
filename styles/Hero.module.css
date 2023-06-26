@@ -1,7 +1,7 @@
 .heroContainer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .detailsWrapper {
@@ -18,7 +18,7 @@
 }
 
 .heading {
-  font-size: 3.6rem;
+  font-size: 5.2rem;
 }
 
 .colorTeritiary {
@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 3rem;
 }
 
 .infoWrapper {
@@ -55,17 +56,56 @@
 }
 
 .imgWrapper {
-  width: 50rem;
-  margin-right: 10rem;
+  width: 65.5%;
+}
+
+.imgWrapper img {
+  height: 80vh;
+}
+
+@media only screen and (max-width: 1200px) {
+  .heroContainer {
+    align-items: center;
+  }
+  .imgWrapper {
+    width: 100rem;
+    height: 100vh;
+  }
+  .detailsWrapper {
+    margin-left: 3rem;
+    height: 100%;
+    width: 50vh;
+    align-items: center;
+  }
+  .heading {
+    font-size: 3.4rem;
+  }
+  .info {
+    font-size: 1.2rem;
+  }
 }
 
 @media only screen and (max-width: 900px) {
   .imgWrapper {
     display: none;
   }
+
+  .detailsWrapper {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .headingContainer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .heading {
+    font-size: 3.6rem;
+  }
   .headingContainer {
     margin-left: 4%;
     text-align: center;
@@ -74,5 +114,7 @@
     height: 83vh;
     margin: 0 3rem;
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }

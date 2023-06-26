@@ -104,4 +104,8 @@
   .projectName {
     margin-bottom: 0;
   }
+
+  .card {
+    width: 300px;
+  }
 }

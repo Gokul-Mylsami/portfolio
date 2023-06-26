@@ -13,9 +13,9 @@ html {
 }
 
 :root {
-  --primary: #f76707;
-  --secondary: #fd7e14;
-  --tertiary: #ff922b;
+  --primary: #37b24d;
+  --secondary: #40c057;
+  --tertiary: #40c057;
   --black: #333;
   --white: #fff;
 }
@@ -25,7 +25,7 @@ html {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -76,13 +76,13 @@ html {
   margin: 50px auto;
   padding: 0 20px;
   position: relative;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .wrapper .center-line {
   position: absolute;
   height: 100%;
   width: 4px;
-  background: #fd7e14;
+  background: var(--secondary);
   left: 50%;
   top: 20px;
   transform: translateX(-50%);
@@ -108,7 +108,7 @@ html {
   content: "";
   height: 15px;
   width: 15px;
-  background: #f08c00;
+  background: var(--secondary);
   top: 28px;
   z-index: -1;
   transform: rotate(45deg);
@@ -128,9 +128,9 @@ html {
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #f08c00;
+  color: var(--secondary);
   font-size: 17px;
-  box-shadow: 0 0 0 4px #f08c00, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+  box-shadow: 0 0 0 4px var(--secondary), inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .center-line .scroll-icon {
@@ -146,6 +146,10 @@ html {
 .row-2 section .icon {
   top: 15px;
   left: -60px;
+}
+.details {
+  font-style: italic;
+  font-weight: bold;
 }
 .row section .details,
 .row section .bottom {
