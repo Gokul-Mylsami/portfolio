@@ -24,6 +24,9 @@ const HeroSection = () => {
             <p className={styles.info}>scalable web apps.</p>
           </div>
         </div>
+        <a href="mailto:gokulmylsami@gmail.com" className={styles.button}>
+          Say Hi 👋🏻
+        </a>
       </div>
       <div className={styles.imgWrapper + " " + "photo"}>
         <Image src={photo} alt="my-photo" />
