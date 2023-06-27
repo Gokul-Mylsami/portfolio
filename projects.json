@@ -28,6 +28,12 @@
     "techStackUsed": ["php", "mysql", "docker", "docker-compose"]
   },
   {
+    "name": "Password Strength",
+    "description": "It is a JavaFX application that will determine the strength of a password.",
+    "imageUrl": "/assets/password-strength-min.png",
+    "techStackUsed": ["Java", "Java FX"]
+  },
+  {
     "name": "Tourist-Guidance",
     "description": "This app is a helpful tool for travelers looking to explore new destinations and find nearby accommodations. With this app, you can easily browse through a variety of tourist places, each with its own detailed description, photos, and ratings.",
     "githubLink": "https://github.com/Gokul-Mylsami/Tourist-Guidance.git",
