@@ -31,6 +31,7 @@
     "name": "Password Strength",
     "description": "It is a JavaFX application that will determine the strength of a password.",
     "imageUrl": "/assets/password-strength-min.png",
+    "githubLink": "https://github.com/Gokul-Mylsami/Password-Health-Checker",
     "techStackUsed": ["Java", "Java FX"]
   },
   {
