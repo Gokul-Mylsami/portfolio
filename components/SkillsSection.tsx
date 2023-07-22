@@ -13,7 +13,7 @@ const SkillsSection = () => {
       <div>
         {roles.map((role: string) => {
           return (
-            <>
+            <div key={role}>
               <h4 className={styles.role}>{role}</h4>
               <div className={styles.cardsWrapper}>
                 {skillData[role].map(
@@ -28,7 +28,7 @@ const SkillsSection = () => {
                   }
                 )}
               </div>
-            </>
+            </div>
           );
         })}
       </div>
