@@ -39,7 +39,8 @@
     "description": "This app is a helpful tool for travelers looking to explore new destinations and find nearby accommodations. With this app, you can easily browse through a variety of tourist places, each with its own detailed description, photos, and ratings.",
     "githubLink": "https://github.com/Gokul-Mylsami/Tourist-Guidance.git",
     "techStackUsed": ["React", "Node js", "MongoDB", "Express"],
-    "imageUrl": "/assets/touristguidance-min.jpeg"
+    "imageUrl": "/assets/touristguidance-min.jpeg",
+    "hostedLink": "https://tour-trekker.netlify.app/"
   },
 
   {
