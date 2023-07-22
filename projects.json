@@ -55,7 +55,8 @@
     "description": "This app is a helpful tool for anyone looking to expand their cocktail-making skills and try new recipes. With this app, you can easily browse through a variety of cocktails, each with its own list of ingredients and step-by-step instructions.",
     "githubLink": "https://github.com/Gokul-Mylsami/Meals-App.git",
     "techStackUsed": ["React", "Open Source API"],
-    "imageUrl": "/assets/cocktail-min.jpeg"
+    "imageUrl": "/assets/cocktail-min.jpeg",
+    "hostedLink": "https://gokul-cocktail.netlify.app"
   },
   {
     "name": "Memories",
