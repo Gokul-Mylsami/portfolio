@@ -10,6 +10,7 @@ import Lines from "../components/Lines";
 import styles from "../styles/Home.module.css";
 import TimeLine from "../components/TimeLine";
 import GetInTouch from "../components/GetInTouch";
+import NumberSection from "../components/NumberSection";
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       {/* <Lines /> */}
       <Navbar />
       <HeroSection />
+      <NumberSection />
       <TimeLine />
       <SkillsSection />
       <Projects />

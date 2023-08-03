@@ -1,0 +1,41 @@
+.container {
+  margin-top: 2rem;
+  background-color: #69db7c;
+  padding: 6rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.individual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .individual {
+    margin: 1rem 0;
+  }
+
+  .number {
+    font-size: 3rem;
+  }
+}
