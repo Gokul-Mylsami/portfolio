@@ -1,6 +1,5 @@
 .container {
-  margin-top: 2rem;
-  background-color: #69db7c;
+  background-color: #9ceb9c;
   padding: 6rem 0;
   display: flex;
   justify-content: space-around;
@@ -15,13 +14,13 @@
 .number {
   font-size: 4rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
 
 .title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   margin-top: 1rem;
 }
