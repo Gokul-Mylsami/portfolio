@@ -84,6 +84,20 @@ const TimeLine = () => {
             </p>
           </section>
         </div>
+        <div className="row row-2">
+          <section>
+            <i className="icon fas fa-globe"></i>
+            <div className="details">
+              <span className="title"></span>
+              <span>
+                2023 <span className="timeline-month">Sep - Till date</span>
+              </span>
+            </div>
+            <p>
+            I have joined Software AG as an R&D intern, and my role is focused on DevOps. I use Docker, Kubernetes (K8s), Helm, AWS, and Azure for deploying services.
+            </p>
+          </section>
+        </div>
       </div>
     </div>
   );
