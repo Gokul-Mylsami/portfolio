@@ -10,7 +10,7 @@ const Navbar = () => {
         </h1>
         <a
           className={styles.navbarLinksContainer}
-          href="https://drive.google.com/file/d/1SCiFCnDmX24MPAah5BsUClSc9lSvYZUa/view?usp=sharing"
+          href="https://drive.google.com/file/d/1C3HMeoyvOP8kxFxof3nVxwfgX-WRqdjL/view?usp=sharing"
           download="Resume.pdf"
         >
           Resume
